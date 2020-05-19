@@ -5,5 +5,8 @@ r:
   - oldrel
   - release
   - devel
+<<<<<<< HEAD
+=======
 sudo: false
+>>>>>>> master
 cache: packages

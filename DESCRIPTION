@@ -1,5 +1,5 @@
 Package: canvasXpress.data
-Version: 1.27.6
+Version: 1.28.3
 Title: Datasets for the 'canvasXpress' Package
 Description: Contains the prepared data that is needed for the 'shiny' application examples in the 
     'canvasXpress' package.  This package also includes datasets used for automated 'testthat' tests.
@@ -25,4 +25,4 @@ Suggests:
     tidyr,
     usethis
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0

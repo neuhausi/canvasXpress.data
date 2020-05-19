@@ -4,7 +4,9 @@
 \name{GSE9750_sample_annot}
 \alias{GSE9750_sample_annot}
 \title{Gene Expression Dataset - Cervical Cancer (sample annotation)}
-\format{A dataframe containing prepared sample annotation data}
+\format{
+A dataframe containing prepared sample annotation data
+}
 \usage{
 GSE9750_sample_annot
 }
