@@ -4,7 +4,9 @@
 \name{GSE9750_expression}
 \alias{GSE9750_expression}
 \title{Gene Expression Dataset - Cervical Cancer (expression values)}
-\format{A numeric matrix containing gene expression data}
+\format{
+A numeric matrix containing gene expression data
+}
 \usage{
 GSE9750_expression
 }

@@ -5,7 +5,7 @@ output:
         self_contained: no
 ---
 
-<a href="http://www.canvasxpress.org"><img src="https://canvasxpress.org/images/brand3.png" align="left" hspace="10" vspace="6" width="100"></a>
+<a href="http://www.canvasxpress.org"><img src="https://www.canvasxpress.org/assets/images/logo-square.svg" align="left" height="100px" style="margin: 50px 20px 5px 0px"></a>
 
 <!-- Badge Location -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/canvasXpress.data?color=9bc2cf)](https://cran.r-project.org/package=canvasXpress.data)
