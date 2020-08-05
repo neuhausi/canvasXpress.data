@@ -1,6 +1,6 @@
 ## Comments from Maintainer
 
-Minor fixes and new datasets
+New Datasets Added
 
 ---  
     
@@ -10,18 +10,18 @@ RStudio Server Pro (ubuntu 18.04.2)
 
 * R 3.5.3  
 * R 3.6.3
-* R 4.0.0
+* R 4.0.1
 
 Travis-CI (ubuntu 16.04.6)
 
 * R 3.6.3
 * R 4.0.0
-* R devel (2020-05-04 r78358)
+* R devel (2020-08-03 r78964)
 
 WinBuilder
 
 * devtools::check_win_devel()  
-* devtools::check_win_release(_R_CHECK_FORCE_SUGGESTS_)  
+* devtools::check_win_release()  
 * devtools::check_win_oldrelease()  
 
 
