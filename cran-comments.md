@@ -1,6 +1,13 @@
 ## Comments from Maintainer
 
-New Datasets Added
+Resubmission Comments
+
+* revdep file ignore typo fixed - build now properly ignores this directory (apologies!)
+
+Original Comments
+
+* New data sets added, existing ones updated
+* Bugfix to test data pull
 
 ---  
     
@@ -8,21 +15,19 @@ New Datasets Added
     
 RStudio Server Pro (ubuntu 18.04.2)  
 
-* R 3.5.3  
 * R 3.6.3
-* R 4.0.1
+* R 4.0.2
 
 Travis-CI (ubuntu 16.04.6)
 
 * R 3.6.3
-* R 4.0.0
-* R devel (2020-08-03 r78964)
+* R 4.0.2
+* R devel (2020-11-30 r79529)
 
 WinBuilder
 
 * devtools::check_win_devel()  
 * devtools::check_win_release()  
-* devtools::check_win_oldrelease()  
 
 
 RHub
@@ -45,17 +50,25 @@ devtools::check()
 ---  
     
 ## Reverse dependencies
-    
-    
-**NONE**
 
-Note: The canvasXpress package will suggest the use of this package
-    
+* canvasXpress    
+
 ```
-pdb <- available.packages()
-tools::package_dependencies(packages = c('canvasxpress.data'),
-                            db = pdb, reverse = TRUE)
+revdepcheck::cran_revdeps('canvasXpress.data')
 
-$canvasXpress.data 
-NULL
+[1] "canvasXpress"      "canvasXpress.data"
+```
+
+```
+revdepcheck::revdep_reset()
+revdepcheck::revdep_check()
+revdepcheck::revdep_report_cran()
+
+## revdepcheck results
+
+We checked 1 reverse dependencies (0 from CRAN + 1 from BioConductor), comparing R CMD check results across CRAN and dev versions of this package.
+
+ * We saw 0 new problems
+ * We failed to check 0 packages
+
 ```
