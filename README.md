@@ -9,7 +9,7 @@ output:
 
 <!-- Badge Location -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/canvasXpress.data?color=9bc2cf)](https://cran.r-project.org/package=canvasXpress.data)
-[![Travis-CI Build Status](https://travis-ci.org/cb4ds/canvasXpress.data.svg?branch=master)](https://travis-ci.org/cb4ds/canvasXpress.data)
+[![Travis-CI Build Status](https://travis-ci.com/cb4ds/canvasXpress.data.svg?branch=master)](https://travis-ci.com/cb4ds/canvasXpress.data)
 
 <!-- End Badges -->
 

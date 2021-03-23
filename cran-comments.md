@@ -1,13 +1,5 @@
 ## Comments from Maintainer
 
-Resubmission Comments
-
-* revdep file ignore typo fixed - build now properly ignores this directory (apologies!)
-
-Original Comments
-
-* New data sets added, existing ones updated
-* Bugfix to test data pull
 
 ---  
     
@@ -22,13 +14,12 @@ Travis-CI (ubuntu 16.04.6)
 
 * R 3.6.3
 * R 4.0.2
-* R devel (2020-11-30 r79529)
+* R devel (2021-03-17 r80092)
 
 WinBuilder
 
 * devtools::check_win_devel()  
 * devtools::check_win_release()  
-
 
 RHub
 
