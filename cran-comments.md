@@ -1,20 +1,24 @@
 ## Comments from Maintainer
 
+* Updated to remove online-available test data for canvasXpress to match the updated expectations in that package
+* Added an example to the only function in the package :-)
 
 ---  
     
 ## Test environments
-    
+
+
 RStudio Server Pro (ubuntu 18.04.2)  
 
 * R 3.6.3
-* R 4.0.2
+* R 4.0.5
+* R 4.1.0
 
 Travis-CI (ubuntu 16.04.6)
 
 * R 3.6.3
 * R 4.0.2
-* R devel (2021-03-17 r80092)
+* R devel (2021-06-20 r80534)
 
 WinBuilder
 
@@ -23,9 +27,9 @@ WinBuilder
 
 RHub
 
-* devtools::check_rhub(
-     env_vars    = c("_R_CHECK_FORCE_SUGGESTS_" = "false"),
-     interactive = F)
+* devtools::check_rhub(interactive = F, 
+                       env_vars    = c(`_R_CHECK_FORCE_SUGGESTS_` = "false"))
+
 
 ---  
     
@@ -51,15 +55,12 @@ revdepcheck::cran_revdeps('canvasXpress.data')
 ```
 
 ```
-revdepcheck::revdep_reset()
-revdepcheck::revdep_check()
 revdepcheck::revdep_report_cran()
 
 ## revdepcheck results
 
-We checked 1 reverse dependencies (0 from CRAN + 1 from BioConductor), comparing R CMD check results across CRAN and dev versions of this package.
+We checked 1 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
 
  * We saw 0 new problems
  * We failed to check 0 packages
-
 ```

@@ -7,3 +7,6 @@ r:
   - devel
 sudo: false
 cache: packages
+if: |
+  branch IN (master, cran) AND \
+  repo = cb4ds/canvasXpress.data
