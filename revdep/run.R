@@ -1,9 +1,5 @@
-# ----------------------------------  
-# Copyright(c) Aggregate Genius Inc.
-# ----------------------------------
+# Script to Run In A Separate Job
 
-# run as a local job
-# be sure to set the environment to one directory up from this one.
-
-revdepcheck::revdep_reset()
-revdepcheck::revdep_check('.', quiet = F)
+library(revdepcheck)
+revdep_reset()
+revdep_check(quiet = FALSE, num_workers = 2, pkg = ".", timeout = as.difftime(120, units = "mins"))

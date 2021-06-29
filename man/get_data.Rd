@@ -2,16 +2,25 @@
 % Please edit documentation in R/get-data.R
 \name{get_data}
 \alias{get_data}
-\title{Get data for given filename.}
+\title{Get the file handle for given file in the package}
 \usage{
 get_data(file_name)
 }
 \arguments{
-\item{file_name}{the file_name}
+\item{file_name}{the file name to retrieve (from the extdata folder)}
 }
 \value{
-File content.
+File handle to the given file or "" if it does not exist
 }
 \description{
-Get data for given filename.
+Get the file handle for given file in the package
+}
+\examples{
+
+sannot_file <- get_data("network_compact.tsv")
+
+# then read the file, for example:
+# data <- read.delim(sannot_file)
+# head(data)
+
 }
